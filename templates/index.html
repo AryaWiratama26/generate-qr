@@ -28,10 +28,13 @@
 
 
         {% if data_res %}
-        <img src="{{ url_for('static', filename='images/' + data_res + '.png') }}" alt="QR Code">
-        <a href="{{ url_for('static', filename='images/' + data_res + '.png') }}" download>Download</a>
+        <div class="result-container">
+            <img src="{{ url_for('static', filename='images/' + data_res + '.png') }}" alt="QR Code">
+            <a href="{{ url_for('static', filename='images/' + data_res + '.png') }}" download
+                class="download-btn">Download</a>
+        </div>
         {% endif %}
-        
+
     </div>
 </body>
 

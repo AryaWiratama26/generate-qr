@@ -7,6 +7,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def home():
     data_res = None
+    
     if request.method == 'POST':
         get_link = request.form.get('link')
         get_nama = request.form.get('nama')

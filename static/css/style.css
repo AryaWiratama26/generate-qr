@@ -134,4 +134,36 @@ img {
     100% {
         transform: translateY(0px) rotate(0deg);
     }
+}.download-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn:hover {
+    background-color: #3367d6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.result-container img {
+    margin-top: 0;
+    
+}
+
+.download-btn {
+    margin-top: 0;
+    
 }
