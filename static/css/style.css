@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 584px;
+    animation: float 6s ease-in-out infinite;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: -3px;
+    margin-bottom: 30px;
+    color: #4285f4;
+    
+}
+
+h1 span:nth-child(1) {
+    color: #4285f4;
+}
+
+h1 span:nth-child(2) {
+    color: #ea4335;
+}
+
+h1 span:nth-child(3) {
+    color: #fbbc05;
+}
+
+h1 span:nth-child(4) {
+    color: #4285f4;
+}
+
+h1 span:nth-child(5) {
+    color: #34a853;
+}
+
+h1 span:nth-child(6) {
+    color: #ea4335;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-group {
+    width: 100%;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    transition: box-shadow 0.3s;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    border: 1px solid #c6c6c6;
+    color: #202124;
+}
+
+img {
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: float-img 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes float-img {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}

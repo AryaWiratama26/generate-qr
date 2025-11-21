@@ -1,1 +1,38 @@
-testing
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate QR - Flask</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+        </h1>
+        <form method="POST">
+            <div class="input-group">
+                <input type="text" name="link" id="link" placeholder="Masukan Link..." required>
+            </div>
+            <div class="input-group">
+                <input type="text" name="nama" id="nama" placeholder="Nama File..." required>
+            </div>
+            <input type="submit" name="Submit" value="Generate QR">
+        </form>
+
+
+
+        {% if data_res %}
+        <img src="{{ url_for('static', filename='images/' + data_res + '.png') }}" alt="QR Code">
+        <a href="{{ url_for('static', filename='images/' + data_res + '.png') }}" download>Download</a>
+        {% endif %}
+        
+    </div>
+</body>
+
+</html>
